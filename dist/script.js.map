@@ -1,1 +1,1 @@
-{"version":3,"sources":["script.js"],"names":[],"mappings":"AAAA","file":"script.js"}
+{"version":3,"sources":["script.js"],"names":["burger","document","querySelector","navList","addEventListener","classList","toggle"],"mappings":"AAAA,aAAA,IAAMA,OAASC,SAASC,cAAc,WAChCC,QAAUF,SAASC,cAAc,aAGvCF,OAAOI,iBAAiB,SAAS,WAC7BD,QAAQE,UAAUC,OAAO","file":"script.js","sourcesContent":["const burger = document.querySelector('#burger');\nconst navList = document.querySelector('#nav-list');\n\n\nburger.addEventListener('click', () => {\n    navList.classList.toggle('show');\n    \n})"]}

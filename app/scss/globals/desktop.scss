@@ -1,0 +1,64 @@
+@use "./colors.scss" as *;
+
+@media screen and (min-width: 1440px) {
+  body {
+    /* header styling */
+    header {
+        max-width: 144rem;
+      & .header-container {
+        padding: 0.8rem 16.7rem;
+
+        & nav.header-nav {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          & button#burger {
+            display: none;
+          }
+
+          & img.logo-mobile {
+            display: none;
+          }
+          & img.logo-desktop {
+              position: absolute;
+            display: block;
+            transform: scale(0.6);
+            left: 58rem;
+            z-index: 1;
+
+          }
+
+          & ul.nav-list {
+            top: -44.9rem;
+            left: 56.5rem;
+            display: flex;
+            flex-direction: row;
+            transform: translateX(-40rem);
+            order: 1;
+            gap: 3rem;
+            min-width: unset;
+            width: 100%;
+
+            & hr {
+              display: none;
+            }
+          }
+
+          & .nav-icons {
+            order: 3;
+            margin-left: 57rem;
+
+            & a img.search-icon {
+                margin-top: 0.2rem;
+            }
+            & a img.shopping-cart-icon {
+              margin-left: 3rem;
+              margin-right: 3rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,2 +1,2 @@
-"use strict";
+"use strict";var burger=document.querySelector("#burger"),navList=document.querySelector("#nav-list");burger.addEventListener("click",(function(){navList.classList.toggle("show")}));
 //# sourceMappingURL=script.js.map
