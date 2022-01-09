@@ -1,0 +1,39 @@
+@use "./colors.scss" as *;
+
+%connect-line {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 6rem;
+  height: 0.2rem;
+  background-color: $select-text-stepper-color;
+}
+
+%input-style {
+  border: 0.1rem solid $input-border-color;
+  border-radius: 0.3rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    border: 0.19rem solid $secondary-text-color;
+  }
+}
+
+%customised-triangle {
+  &::after {
+    content: "\25BE";
+    position: absolute;
+    transform: scale(1.7);
+  }
+}
+
+%label-style {
+  display: block;
+  margin-bottom: 1rem;
+  color: $secondary-text-color;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
