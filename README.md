@@ -1,8 +1,8 @@
-# Alpha Shop 🛒
+🛒 # Alpha Shop 
 
-## Overview 🔍
+🔍 ## Overview 
 
-### The challenge 💪🏻
+💪 ### The challenge 
 
 Users should be able to:
 
@@ -10,7 +10,7 @@ Users should be able to:
 - Navigate step by step
 - Purchase items and place orders effortlessly
 
-### Things to be improved 🤯
+🤯 ### Things to be improved 
 
 - Fix header for the desktop version (anchor links aren't working but they work on the mobile version)
 - Fix navbar as it does not show 100vh
@@ -19,13 +19,13 @@ Users should be able to:
 - Add functions for Shopping Cart (delivery fee & total amount)
 - Add darkmode
 
-### Screenshot 📸
+📸 ### Screenshot 
 
 ![](./images/mobile-375px.png)
 ![](./images/mobile-burger-375px.png)
 ![](./images/desktop-1440px.png)
 
-### Built with 🔨
+🔨 ### Built with 
 
 - Gulp
 - Semantic HTML5 markup
