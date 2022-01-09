@@ -1,7 +1,14 @@
-$primary-text-color: hsla(0, 0%, 16%, 1);
+$primary-text-color: hsl(0, 0%, 16%);
 $secondary-text-color: hsla(0, 0%, 50%, 1);
+$stepper-inactive-color: hsl(231, 10%, 71%);
+$connect-line-inactive-color:hsl(240, 20%, 95%);
+$input-border-color: hsla(0, 0%, 29%, 1);
+$input-text-color: hsl(0, 0%, 60%);
+$select-text-stepper-color: hsl(0, 0%, 16%);
+$select-city-color: hsl(0, 0%, 60%, 0.6);
+$radio-unchecked-color: hsl(240, 20%, 95%);
 $white: hsla(0, 0%, 100%, 1);
-$hr-color: hsla(0, 0%, 16%, 0.1);
-$btn-bg: hsla(343, 88%, 71%, 1);
+$hr-cartBorder-color: hsla(0, 0%, 16%, 0.1);
+$btn-bg-color: hsla(343, 88%, 71%, 1);
 $footer-text-color: hsla(0, 0%, 100%, 0.6);
 $minus-plus-bg: hsla(240, 20%, 95%, 1);
