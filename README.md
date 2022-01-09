@@ -8,6 +8,7 @@ Users should be able to:
 
 - View the optimal layout for the site depending on their device's screen size
 - Navigate step by step
+- Purchase items and place orders effortlessly
 
 ### Things to be improved
 
