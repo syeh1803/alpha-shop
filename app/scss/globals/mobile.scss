@@ -142,7 +142,7 @@ body {
                 input {
                   @extend %input-style;
                   padding: 1.1rem;
-                  color: $input-text-color;
+                  color: $input-footer-text-color;
 
                   &[name="telephone"],
                   &[name="email"],
@@ -298,7 +298,7 @@ body {
           margin: 3.2rem 0;
           padding: 1.7rem;
           border: 0.1rem solid $hr-cartBorder-color;
-
+          border-radius: 0.8rem;
           & h1 {
             display: none;
           }
@@ -400,5 +400,9 @@ body {
         visibility: hidden;
       }
     }
+  }
+
+  & footer {
+      display: none;
   }
 }

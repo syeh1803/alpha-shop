@@ -43,17 +43,16 @@
             & hr {
               display: none;
             }
-          }
 
-          & .nav-icons {
-            margin-left: 57rem;
+            & .nav-icons {
+              margin-left: 60.5rem;
 
-            & a img.search-icon {
-              margin-top: 0.2rem;
-            }
-            & a img.shopping-cart-icon {
-              margin-left: 3rem;
-              margin-right: 3rem;
+              & a img.search-icon {
+                margin-top: 0.2rem;
+              }
+              & a img.shopping-cart-icon {
+                margin: 0 2rem;
+              }
             }
           }
         }
@@ -244,10 +243,11 @@
           /* checkout content styling */
           & .right-content {
             width: 39%;
+            margin-top: 6.5rem;
             & h1 {
-                display: block;
-                margin: 1.8rem 0 3.5rem 0;
-                font-size: 1.8rem;
+              display: block;
+              margin: 1.8rem 0 3.5rem 0;
+              font-size: 1.8rem;
             }
 
             & .shopping-cart-details {
@@ -291,9 +291,11 @@
               & .shopping-cart-fee-wrapper {
                 & .fee-wrapper {
                   &:first-of-type {
+                    margin: -0.5rem 0 3rem 0;
                   }
 
                   &:last-of-type {
+                    margin: 1.5rem 0;
                   }
 
                   > span:last-of-type {
@@ -303,17 +305,76 @@
             }
           }
         }
-        & hr.full-width {
+        > hr.full-width {
+          width: 40%;
+          margin: -9.7rem 0 0 14.5rem;
         }
       }
       /* btns styling */
       & .btns-group {
         position: absolute;
-        bottom: 10rem;
+        bottom: 19.1rem;
         left: 16.5rem;
 
         & .btn-prev {
-            margin-right: 31rem;
+          margin-right: 31rem;
+        }
+      }
+    }
+
+    /* footer styling */
+    & footer {
+      display: block;
+      background-color: $footer-bg-color;
+      margin-top: 19.5rem;
+
+      & .footer-container {
+        display: flex;
+        padding: 6rem 16.4rem 8rem 16.4rem;
+
+        & .footer-logo {
+          margin: 2rem 4rem 0 -3rem;
+          & img {
+            transform: scale(0.6);
+          }
+        }
+
+        & .footer-content-container {
+          & h1 {
+            margin-bottom: 2rem;
+            font-size: 2.4rem;
+          }
+
+          & p {
+            font-size: 1.6rem;
+            color: $input-footer-text-color;
+
+            &:not(:last-of-type) {
+              margin-bottom: 1rem;
+            }
+          }
+
+          & .social-media {
+            display: flex;
+            gap: 2rem;
+            margin-top: 1rem;
+            & i {
+              font-size: 2rem;
+              color: $input-footer-text-color;
+            }
+          }
+        }
+
+        & .customer-service {
+          margin-right: 12rem;
+        }
+
+        & .about-us {
+          margin-right: 12.2rem;
+        }
+
+        & .information {
+          margin-right: 11rem;
         }
       }
     }
