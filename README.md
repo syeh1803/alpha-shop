@@ -13,7 +13,7 @@ Users should be able to:
 ### Things to be improved
 
 - Fix header for the desktop version (anchor links aren't working but they work on the mobile version)
-- Fix navbar as it doe not show 100vh
+- Fix navbar as it does not show 100vh
 - Optimise steppers on both mobile and desktop devices
 - Add functions for buttons (show previous button & modify order confirmtion button)
 - Add functions for Shopping Cart (delivery fee & total amount)
