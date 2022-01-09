@@ -213,10 +213,19 @@ body {
                 flex-direction: column;
                 gap: 2rem;
 
+
                 & .radio-wrapper {
                   border-radius: 0.3rem;
                   padding: 1.3rem 1.5rem;
                   border: 0.1rem solid $radio-unchecked-color;
+
+                  &:hover {
+                      border: 0.1rem solid $primary-text-color;
+                  }
+
+                  &.addBorder {
+                      border: 0.1rem solid red;
+                  }
 
                   & input[type="radio"] {
                     -webkit-appearance: none;

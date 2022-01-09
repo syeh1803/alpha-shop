@@ -1,6 +1,8 @@
 const burger = document.querySelector("#burger");
 const navList = document.querySelector("#nav-list");
+
 const radioShipping = document.querySelectorAll(".shipping-radio");
+
 const prevBtn = document.querySelector(".btn-prev");
 const nextBtn = document.querySelector(".btn-next");
 const formSteps = document.querySelectorAll(".form-step");
@@ -9,25 +11,19 @@ const stepOne = document.querySelector(".step-1");
 const stepTwo = document.querySelector(".step-2");
 const stepThree = document.querySelector(".step-3");
 
+const shoppingCart = document.querySelector("#shopping-cart-details");
+const productPrice = document.querySelectorAll(".product-price");
+
+const deliveryFee = document.querySelector('.shipping-fee-calc');
+const form = document.querySelector('.form');
+
+
 // count the step
 let formStepsNum = 0;
 
 // burger menu toggle
 burger.addEventListener("click", () => {
   navList.classList.toggle("show");
-});
-
-// radio wrapper border color changes when selected
-// not working properly atm
-radioShipping.forEach((radio) => {
-  radio.addEventListener("click", (e) => {
-    if (e.target.checked) {
-      e.target.parentElement.style.borderColor = "black";
-      e.target.removeAttribute("checked");
-    } else if (e.target.removeAttribute("checked")) {
-      e.target.parentElement.style.borderColor = "red";
-    }
-  });
 });
 
 nextBtn.addEventListener("click", () => {
@@ -42,7 +38,6 @@ prevBtn.addEventListener("click", () => {
   updateFormSteps();
   updateProgressbar();
 });
-
 
 function updateFormSteps() {
   // remove previous step content
@@ -67,3 +62,42 @@ function updateProgressbar() {
 }
 
 // stepper tutorial https://www.youtube.com/watch?v=JFfVilQSius
+
+// delivery fee calculation
+// form.addEventListener('click', () => {
+//     const delivery = document.querySelector('input[name="delivery"]').value;
+//     if(delivery === 'standard'){
+//         deliveryFee.innerText = "免費"
+//     } else if (delivery === 'dhl') {
+//         deliveryFee.innerText = currencyFormat(500);
+//     }
+// })
+
+// checkout items
+shoppingCart.addEventListener("click", (e) => {
+    updateCart(e);
+});
+
+// updateQuantity function
+function updateCart(e) {
+  // add or remove items
+  if (e.target.matches(".minus-btn") || e.target.matches(".plus-btn")) {
+    let quantityContainer = e.target.parentElement.children[1];
+    let quantity = Number(quantityContainer.innerText);
+    if (e.target.matches(".plus-btn")) {
+      quantity += 1;
+    } else {
+      quantity -= 1;
+      if (quantity < 0) {
+        quantity = 0;
+      }
+    }
+    quantityContainer.innerText = quantity;
+
+    // update price
+    // productPrice.forEach((price) => {
+    //   // once quantity is incremented or decremented, update the price
+      
+    // });
+  }
+}

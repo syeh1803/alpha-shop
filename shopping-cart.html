@@ -134,7 +134,7 @@
                         <div class="form-step step-2">
                             <h1 class="shipping-method-heading heading">運送方式</h1>
                             <div class="form-row shipping-method-container">
-                                <div class="radio-wrapper standard-shipping-container" id="radio-wrapper">
+                                <div class="radio-wrapper standard-shipping-container">
                                     <input type="radio" name="delivery" value="standard"
                                         class="standard-shipping shipping-radio" id="standard-shipping" />
                                     <label for="standard-shipping" id="standard-shipping"
@@ -149,7 +149,7 @@
                                         <span class="delivery-cost free">免費</span>
                                     </label>
                                 </div>
-                                <div class="radio-wrapper dhl-container" id="radio-wrapper">
+                                <div class="radio-wrapper dhl-container">
                                     <input type="radio" name="delivery" value="dhl" class="dhl-shipping  shipping-radio"
                                         id="dhl-shipping" />
                                     <label for="dhl-shipping" id="dhl-shipping" class="dhl delivery-content">
@@ -198,7 +198,7 @@
                 <!-- shopping cart  -->
                 <div class="right-content">
                     <h1 class="shopping-cart-heading heading">購物籃</h1>
-                    <div class="shopping-cart-details">
+                    <div class="shopping-cart-details" id="shopping-cart-details">
                         <div class="product-wrapper">
                             <span class="product-image"><img src="/images/ripped-jeans.png"
                                     alt="ripped jeans image"></span>
@@ -206,13 +206,13 @@
                                 <div class="produdct-details-wrapper first-product-details-wrapper">
                                     <h5 class="product-name">破壞補丁修身牛仔褲</h5>
                                     <div class="change-amount-btn-wrapper">
-                                        <button class="minus-btn change-amount-btn" id="minus-btn">–</button>
-                                        <span class="amount" id="amount">1</span>
-                                        <button class="plus-btn change-amount-btn" id="plus-btn">+</button>
+                                        <button class="minus-btn change-amount-btn">–</button>
+                                        <span class="amount">1</span>
+                                        <button class="plus-btn change-amount-btn">+</button>
                                     </div>
                                 </div>
 
-                                <h5 class="product-price" id="product-price">$3,999</h5>
+                                <h5 class="product-price">$3,999</h5>
                             </div>
                         </div>
                         <div class="product-wrapper">
@@ -221,19 +221,19 @@
                                 <div class="produdct-details-wrapper second-product-details-wrapper">
                                     <h5 class="product-name">刷色直筒牛仔褲</h5>
                                     <div class="change-amount-btn-wrapper">
-                                        <button class="minus-btn change-amount-btn" id="minus-btn">–</button>
-                                        <span class="amount" id="amount">1</span>
-                                        <button class="plus-btn change-amount-btn" id="plus-btn">+</button>
+                                        <button class="minus-btn change-amount-btn">–</button>
+                                        <span class="amount">1</span>
+                                        <button class="plus-btn change-amount-btn">+</button>
                                     </div>
                                 </div>
-                                <h5 class="product-price" id="product-price">$1,299</h5>
+                                <h5 class="product-price">$1,299</h5>
                             </div>
                         </div>
                         <hr class="full-width">
                         <div class="shopping-cart-fee-wrapper">
                             <div class="fee-wrapper">
                                 <span class="delivery-fee">運費</span>
-                                <span class="free-delivery">免費</span>
+                                <span class="free-delivery shipping-fee-calc">免費</span>
                             </div>
                             <hr class="full-width">
                             <div class="fee-wrapper">
