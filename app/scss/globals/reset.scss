@@ -1,3 +1,5 @@
+@use "./colors.scss" as *;
+
 /* reset css */
 html,
 body,
@@ -149,6 +151,15 @@ button {
   cursor: pointer;
 }
 
-main, .header-container {
-    padding: 1.6rem 1.8rem;
+h1.heading {
+  font-weight: 600;
+  font-size: 2.4rem;
+  color: $primary-text-color;
+}
+
+hr {
+  border: 0;
+  height: 0.1rem;
+  width: 90%;
+  background: $hr-cartBorder-color;
 }

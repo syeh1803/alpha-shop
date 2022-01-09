@@ -4,7 +4,7 @@
   body {
     /* header styling */
     header {
-        max-width: 144rem;
+      max-width: 144rem;
       & .header-container {
         padding: 0.8rem 16.7rem;
 
@@ -21,12 +21,11 @@
             display: none;
           }
           & img.logo-desktop {
-              position: absolute;
+            position: absolute;
             display: block;
             transform: scale(0.6);
             left: 58rem;
-            z-index: 1;
-
+            z-index: 3;
           }
 
           & ul.nav-list {
@@ -34,11 +33,12 @@
             left: 56.5rem;
             display: flex;
             flex-direction: row;
-            transform: translateX(-40rem);
-            order: 1;
             gap: 3rem;
+            margin-top: 3rem;
             min-width: unset;
             width: 100%;
+            transform: translateX(-40rem);
+            z-index: -1;
 
             & hr {
               display: none;
@@ -46,17 +46,274 @@
           }
 
           & .nav-icons {
-            order: 3;
             margin-left: 57rem;
 
             & a img.search-icon {
-                margin-top: 0.2rem;
+              margin-top: 0.2rem;
             }
             & a img.shopping-cart-icon {
               margin-left: 3rem;
               margin-right: 3rem;
             }
           }
+        }
+      }
+    }
+
+    /* main section */
+    main {
+      & .main-container {
+        & .content-wrapper {
+          flex-direction: row;
+          justify-content: space-between;
+          margin: 11rem 12.5rem 0 14.5rem;
+
+          & .left-content {
+            width: 50%;
+            /* form-styling */
+            & form {
+              > h1 {
+                font-size: 3.2rem;
+              }
+              /* stepper styling */
+              & .progressbar {
+                justify-content: flex-start;
+
+                &::before {
+                  transform: translateX(220%);
+                }
+
+                &::after {
+                  transform: translateX(590%);
+                }
+
+                & .progress-step {
+                  width: 2.4rem;
+                  height: 2.4rem;
+                  &:nth-of-type(1) {
+                    margin-right: 20rem;
+                  }
+
+                  &:nth-of-type(2) {
+                    margin-right: 20rem;
+                  }
+
+                  &::before {
+                    font-size: 1.2rem;
+                  }
+                  &::after {
+                    content: attr(data-title);
+                    position: absolute;
+                    font-size: 1.6rem;
+                    transform: translateX(5.5rem);
+                  }
+                }
+
+                & .progress-step-active {
+                }
+
+                & .progress-step-checked {
+                }
+              }
+              & .form-step {
+                > h1 {
+                  font-size: 2.4rem;
+                }
+
+                & .form-row {
+                  /* step 1: delivery address styling */
+
+                  input {
+                    &[name="telephone"],
+                    &[name="email"],
+                    &[name="address"],
+                    &[name="cardholder"],
+                    &[name="card-number"] {
+                      padding-right: 1.4rem;
+                    }
+                    &[name="name"],
+                    &[name="address"] {
+                      width: 36rem;
+                    }
+
+                    &[name="telephone"],
+                    &[name="email"] {
+                      width: 26.4rem;
+                    }
+
+                    &[name="address"] {
+                      margin-left: 1.1rem;
+                    }
+                  }
+                  & .select-wrapper {
+                    & select {
+                      &[name="honorifics"],
+                      &[name="city"] {
+                        width: 15.8rem;
+                      }
+
+                      &[name="city"] {
+                        padding-right: 3.5rem;
+                      }
+                    }
+                  }
+
+                  & .select-wrapper-honorifics {
+                    &::after {
+                      left: 13.5rem;
+                    }
+                  }
+                  & .select-wrapper-city {
+                    &::after {
+                      right: 1.8rem;
+                    }
+                  }
+                }
+
+                .form-separate {
+                  flex-direction: row;
+
+                  &:last-of-type {
+                  }
+                }
+
+                .form-inline {
+                }
+                /* step 2: delivery method styling */
+                & .shipping-method-container {
+                  & .radio-wrapper {
+                    width: 43.5rem;
+                    & input[type="radio"] {
+                      &:checked {
+                      }
+                    }
+
+                    label {
+                      & .delivery-wrapper-left {
+                        & .delivery-content {
+                        }
+
+                        & .delivery-option {
+                        }
+
+                        & .delivery-time {
+                        }
+                      }
+
+                      & span.delivery-cost {
+                      }
+
+                      & span.free {
+                        transform: translate(24rem, -2rem);
+                      }
+
+                      & span.five-hundred {
+                        transform: translate(24.5rem, -2rem);
+                      }
+                    }
+                  }
+                }
+
+                /* step 3: payment info*/
+                & .payment-container {
+                  & input {
+                    &[name="cardholder"],
+                    &[name="card-number"] {
+                      width: 35rem;
+                    }
+                  }
+
+                  & .form-two-columns-wrapper {
+                    & input {
+                      width: 25.5rem;
+                    }
+
+                    & .expiration-CVC-wrapper {
+                      display: flex;
+                      flex-direction: column;
+                    }
+                  }
+                }
+              }
+
+              & .form-step-active {
+              }
+            }
+          }
+
+          /* checkout content styling */
+          & .right-content {
+            width: 39%;
+            & h1 {
+                display: block;
+                margin: 1.8rem 0 3.5rem 0;
+                font-size: 1.8rem;
+            }
+
+            & .shopping-cart-details {
+              & .product-wrapper {
+                & .product-details {
+                  display: flex;
+
+                  & .produdct-details-wrapper {
+                    text-align: left;
+                  }
+
+                  & .first-product-details-wrapper {
+                    margin-right: 9rem;
+                  }
+
+                  & .second-product-details-wrapper {
+                    margin-right: 12rem;
+                  }
+                  & h5.product-name {
+                  }
+
+                  & .change-amount-btn-wrapper {
+                    & button.change-amount-btn {
+                    }
+
+                    & .minus-btn {
+                    }
+
+                    & .plus-btn {
+                    }
+
+                    & span.amount {
+                    }
+                  }
+
+                  & h5.product-price {
+                  }
+                }
+              }
+
+              & .shopping-cart-fee-wrapper {
+                & .fee-wrapper {
+                  &:first-of-type {
+                  }
+
+                  &:last-of-type {
+                  }
+
+                  > span:last-of-type {
+                  }
+                }
+              }
+            }
+          }
+        }
+        & hr.full-width {
+        }
+      }
+      /* btns styling */
+      & .btns-group {
+        position: absolute;
+        bottom: 10rem;
+        left: 16.5rem;
+
+        & .btn-prev {
+            margin-right: 31rem;
         }
       }
     }

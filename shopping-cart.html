@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Roboto&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="dist/style.css">
+    <title>Alpha Shop</title>
+</head>
+
+<body>
+    <!-- header -->
+    <header class="header" id="header">
+        <div class="header-container">
+            <nav class="header-nav">
+                <button type="button" id="burger"><img src="/images/burger.png" alt="burger" class="burger"></button>
+                <a href="#"><img src="/images/Logo.png" alt="logo" class="logo-mobile"></a>
+                <a href="#"><img src="/images/Logo@2x.png" alt="logo" class="logo-desktop"></a>
+
+                <ul class="nav-list" id="nav-list">
+                    <li class="nav-item"><a href="#men">男款</a></li>
+                    <hr>
+                    <li class="nav-item"><a href="#women">女款</a></li>
+                    <hr>
+                    <li class="nav-item"><a href="#latest-news">最新消息</a></li>
+                    <hr>
+                    <li class="nav-item"><a href="#contact-us">聯絡我們</a></li>
+                    <hr>
+                    <li class="nav-item"><a href="#customised-product">客製商品</a></li>
+                    <hr>
+                    <div class="nav-icons">
+                        <a href="#search"><img src="/images/search.png" alt="search icon" class="search-icon"></a>
+                        <a href="./shopping-cart.html"><img src="/images/shopping-cart.png" alt="shopping cart icon"
+                                class="shopping-cart-icon"></a>
+                        <button type="button" id="dark-mode"><img src="/images/dark-mode.png" alt="dark mode icon"
+                                class="dark-mode-icon"></button>
+                    </div>
+                </ul>
+
+            </nav>
+    </header>
+
+    <!-- main content -->
+    <main id="main" class="main">
+        <div class="main-container">
+            <div class="content-wrapper">
+                <div class="left-content">
+                    <form class="form">
+                        <!-- stepper -->
+                        <h1 class="checkout-heading heading">結帳</h1>
+                        <div class="progressbar">
+                            <div class="progress-step progress-step-active" data-title="寄送地址"></div>
+                            <div class="progress-step" data-title="運送方式"></div>
+                            <div class="progress-step" data-title="付款資訊"></div>
+                        </div>
+                        <!-- step 1: delivery address -->
+                        <div class="form-step form-step-active step-1">
+                            <h1 class="form-address-heading heading">
+                                寄送地址
+                            </h1>
+                            <div class="form-inline form-row">
+                                <label for="honorifics-select">稱謂</label>
+                                <div class="select-wrapper select-wrapper-honorifics">
+                                    <select name="honorifics" id="honorifics-select">
+                                        <option value="mister">先生</option>
+                                        <option value="miss">小姐</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-inline form-row">
+                                <label for="name">姓名</label>
+                                <input type="text" name="name" id="name" placeholder="請輸入姓名" required />
+                            </div>
+                            <div class="form-separate">
+                                <div class="form-row">
+                                    <label for="telephone">電話</label>
+                                    <input type="text" name="telephone" id="telephone" placeholder="請輸入行動電話" required>
+                                </div>
+                                <div class="form-row">
+                                    <label for="email">Email</label>
+                                    <input type="email" name="email" id="email" placeholder="請輸入電子郵件" required>
+                                </div>
+                            </div>
+                            <div class="form-separate">
+                                <div class="form-row">
+                                    <label for="city-select">縣市</label>
+                                    <div class="select-wrapper select-wrapper-city">
+                                        <select name="city" id="city-select">
+                                            <option value="">請選擇縣市</option>
+                                            <option value="基隆市">基隆市</option>
+                                            <option value="台北市">台北市</option>
+                                            <option value="新北市">新北市</option>
+                                            <option value="桃園市">桃園市</option>
+                                            <option value="新竹縣">新竹縣</option>
+                                            <option value="新竹市">新竹市</option>
+                                            <option value="苗栗縣">苗栗縣</option>
+                                            <option value="台中市">台中市</option>
+                                            <option value="彰化縣">彰化縣</option>
+                                            <option value="雲林縣">雲林縣</option>
+                                            <option value="南投縣">南投縣</option>
+                                            <option value="嘉義縣">嘉義縣</option>
+                                            <option value="嘉義市">嘉義市</option>
+                                            <option value="台南市">台南市</option>
+                                            <option value="高雄市">高雄市</option>
+                                            <option value="屏東縣">屏東縣</option>
+                                            <option value="宜蘭縣">宜蘭縣</option>
+                                            <option value="花蓮縣">花蓮縣</option>
+                                            <option value="臺東縣">臺東縣</option>
+                                            <option value="澎湖縣">澎湖縣</option>
+                                            <option value="金門縣">金門縣</option>
+                                            <option value="連江縣">連江縣</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <label for="address">地址</label>
+                                    <input type="text" name="address" id="address" placeholder="請輸入地址" required>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- step 2: delivery method  -->
+                        <div class="form-step step-2">
+                            <h1 class="shipping-method-heading heading">運送方式</h1>
+                            <div class="form-row shipping-method-container">
+                                <div class="radio-wrapper standard-shipping-container" id="radio-wrapper">
+                                    <input type="radio" name="delivery" value="standard"
+                                        class="standard-shipping shipping-radio" id="standard-shipping" />
+                                    <label for="standard-shipping" id="standard-shipping"
+                                        class="standard delivery-content">
+                                        <div class="delivery-wrapper-left">
+                                            <h5 class="delivery-option delivery-content">
+                                                標準運送
+                                            </h5>
+                                            <h5 class="delivery-time delivery-content">約 3~7 個工作天</h5>
+                                        </div>
+
+                                        <span class="delivery-cost free">免費</span>
+                                    </label>
+                                </div>
+                                <div class="radio-wrapper dhl-container" id="radio-wrapper">
+                                    <input type="radio" name="delivery" value="dhl" class="dhl-shipping  shipping-radio"
+                                        id="dhl-shipping" />
+                                    <label for="dhl-shipping" id="dhl-shipping" class="dhl delivery-content">
+                                        <div class="delivery-wrapper-left">
+                                            <h5 class="delivery-option delivery-content">
+                                                <b>DHL 貨運</b>
+                                            </h5>
+                                            <h5 class="delivery-time delivery-content">48 小時內送達</h5>
+                                        </div>
+                                        <span class="delivery-cost five-hundred">$500</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- step 3: payment info -->
+                        <div class="form-step step-3">
+                            <h1 class="payment-heading heading">付款資訊</h1>
+                            <div class="payment-container">
+                                <div class="form-row">
+                                    <label for="cardholder">持卡人姓名</label>
+                                    <input type="text" name="cardholder" id="cardholder" placeholder="John Doe"
+                                        required />
+                                </div>
+                                <div class="form-row">
+                                    <label for="card-number">卡號</label>
+                                    <input type="text" name="card-number" id="card-number"
+                                        placeholder="1111 2222 3333 4444" required />
+                                </div>
+                                <div class="form-inline form-row form-two-columns-wrapper">
+                                    <div class="expiration-CVC-wrapper">
+                                        <label for="expiration-date">有效期限</label>
+                                        <input type="text" name="expiration-date" id="expiration-date" placeholder="MM/YY" required />
+                                    </div>
+                                    <div class="expiration-CVC-wrapper">
+                                        <label for="CVC-CCV">CVC / CCV</label>
+                                        <input type="text" name="CVC-CCV" id="CVC-CCV" placeholder="123" required />
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+                <!-- shopping cart  -->
+                <div class="right-content">
+                    <h1 class="shopping-cart-heading heading">購物籃</h1>
+                    <div class="shopping-cart-details">
+                        <div class="product-wrapper">
+                            <span class="product-image"><img src="/images/ripped-jeans.png"
+                                    alt="ripped jeans image"></span>
+                            <div class="product-details">
+                                <div class="produdct-details-wrapper first-product-details-wrapper">
+                                    <h5 class="product-name">破壞補丁修身牛仔褲</h5>
+                                    <div class="change-amount-btn-wrapper">
+                                        <button class="minus-btn change-amount-btn" id="minus-btn">–</button>
+                                        <span class="amount" id="amount">1</span>
+                                        <button class="plus-btn change-amount-btn" id="plus-btn">+</button>
+                                    </div>
+                                </div>
+
+                                <h5 class="product-price" id="product-price">$3,999</h5>
+                            </div>
+                        </div>
+                        <div class="product-wrapper">
+                            <span class="product-image"><img src="/images/dyed-jeans.png" alt="dyed jeans image"></span>
+                            <div class="product-details">
+                                <div class="produdct-details-wrapper second-product-details-wrapper">
+                                    <h5 class="product-name">刷色直筒牛仔褲</h5>
+                                    <div class="change-amount-btn-wrapper">
+                                        <button class="minus-btn change-amount-btn" id="minus-btn">–</button>
+                                        <span class="amount" id="amount">1</span>
+                                        <button class="plus-btn change-amount-btn" id="plus-btn">+</button>
+                                    </div>
+                                </div>
+                                <h5 class="product-price" id="product-price">$1,299</h5>
+                            </div>
+                        </div>
+                        <hr class="full-width">
+                        <div class="shopping-cart-fee-wrapper">
+                            <div class="fee-wrapper">
+                                <span class="delivery-fee">運費</span>
+                                <span class="free-delivery">免費</span>
+                            </div>
+                            <hr class="full-width">
+                            <div class="fee-wrapper">
+                                <span class="total-amount">小計</span>
+                                <span class="total-amount-number" id="total-amount-number">$5,298</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="full-width">
+        </div>
+        <!-- btns -->
+        <div class="btns-group">
+            <a href="#" class="btn btn-prev">⟵ 上一步</a>
+            <a href="#" class="btn btn-next">下一步 ⟶</a>
+        </div>
+    </main>
+    <!-- JS -->
+    <script src="dist/script.js"></script>
+</body>
+
+</html>
