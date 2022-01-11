@@ -18,7 +18,9 @@ gh repo clone https://github.com/syeh1803/alpha-shop.git
 ```
 
 2. Navigate to the directory
-```cd alpha-shop```
+```
+cd alpha-shop
+```
 
 3. Initialisation
 
