@@ -10,7 +10,7 @@ Users should be able to:
 - Navigate step by step
 - Purchase items and place orders effortlessly
 
-### Installation
+### Installation 🖥
 
 1. Use command line below on your Terminal to start the clone
 ``` 
