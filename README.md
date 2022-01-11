@@ -27,7 +27,7 @@ cd alpha-shop
 ```
 npm install 
 ```
-4. Executing program
+4. Execute program
 
 ```
 gulp
