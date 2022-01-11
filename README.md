@@ -14,7 +14,7 @@ Users should be able to:
 
 1. Use command line below on your Terminal to start the clone
 ``` 
-gh repo clone https://github.com/syeh1803/alpha-shop.git
+git clone https://github.com/syeh1803/alpha-shop.git
 ```
 
 2. Navigate to the directory
