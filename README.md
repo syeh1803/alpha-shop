@@ -10,6 +10,27 @@ Users should be able to:
 - Navigate step by step
 - Purchase items and place orders effortlessly
 
+### Installation
+
+1. Use command line below on your Terminal to start the clone
+``` 
+gh repo clone https://github.com/syeh1803/alpha-shop.git
+```
+
+2. Navigate to the directory
+```cd alpha-shop```
+
+3. Initialisation
+
+```
+npm install 
+```
+4. Executing program
+
+```
+gulp
+```
+
 ### Things to be improved 🤯 
 
 - Fix header for the desktop version (anchor links aren't working but they work on the mobile version)
