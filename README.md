@@ -27,7 +27,12 @@ cd alpha-shop
 ```
 npm install 
 ```
-4. Execute program
+
+4. Install gulp
+```
+npm install gulp --save-dev @babel/core @babel/preset-env postcss autoprefixer browser-sync cssnano sass gulp gulp-babel gulp-postcss gulp-sass gulp-terser
+```
+5. Execute program
 
 ```
 gulp
